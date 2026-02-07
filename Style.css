@@ -118,13 +118,13 @@ h2 {
 }
 .education-card {
     background-color: rgb(250, 247, 247);
-    backdrop-filter: blur(10px);              /* ធ្វើឱ្យ Background ខាងក្រោយមើលទៅរាង Blur (ស្អាត) */
-    border-radius: 15px;                      /* ធ្វើឱ្យជ្រុងប្រអប់រាងមូល */
-    padding: 20px;                            /* បន្ថែមគម្លាតខាងក្នុងប្រអប់ */
-    margin-bottom: 20px;                      /* បន្ថែមគម្លាតរវាងប្រអប់មួយទៅមួយ */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);    /* បន្ថែមស្រមោលតិចៗឱ្យមើលទៅលោតឡើង */
+    backdrop-filter: blur(10px);              
+    border-radius: 15px;                      
+    padding: 20px;                          
+    margin-bottom: 20px;                     
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);   
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.2); /* បន្ថែមបន្ទាត់ជុំវិញតិចៗ */
+    border: 1px solid rgba(255, 255, 255, 0.2); 
 }
 .project-grid {
     background-color: rgb(250, 247, 247);
@@ -135,6 +135,31 @@ h2 {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);   
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.technical-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    justify-content: center; 
+    gap: 10px;
+}
+
+.skill-item p {
+    font-weight: bold;
+    margin-bottom: 15px; 
+}
+
+.skill-item img {
+    width: 50px; 
+    height: auto;
+  ;
 }
 .exp-item {
     background-color: rgb(250, 247, 247);
