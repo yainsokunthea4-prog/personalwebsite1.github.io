@@ -1,0 +1,179 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* [cite: 84] */
+}
+
+body {
+    line-height: 2.6;
+    color: #333;
+    background-image: url("background1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;                
+    background-attachment: fixed;
+
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: #2c3e50;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1500;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #3498db;
+}
+
+/* Sections */
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.gray-bg {
+    
+    background-color: #f4f4f4;
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+/* Home Styling */
+.profile-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 20px;
+    border: 5px solid #3498db;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1); 
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+/* Grids */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-grid, .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Cards */
+.card,.project-card, .skill-item {
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.aboutme-card {
+    background-color: rgb(250, 247, 247);
+    backdrop-filter: blur(10px);              
+    border-radius: 15px;                      
+    padding: 20px;                            
+    margin-bottom: 20px;                      
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);   
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.skill-grid {
+    background-color: rgb(250, 247, 247);
+    backdrop-filter: blur(10px);              
+    border-radius: 15px;                      
+    padding: 20px;                            
+    margin-bottom: 20px;                      
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);   
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.education-card {
+    background-color: rgb(250, 247, 247);
+    backdrop-filter: blur(10px);              /* ធ្វើឱ្យ Background ខាងក្រោយមើលទៅរាង Blur (ស្អាត) */
+    border-radius: 15px;                      /* ធ្វើឱ្យជ្រុងប្រអប់រាងមូល */
+    padding: 20px;                            /* បន្ថែមគម្លាតខាងក្នុងប្រអប់ */
+    margin-bottom: 20px;                      /* បន្ថែមគម្លាតរវាងប្រអប់មួយទៅមួយ */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);    /* បន្ថែមស្រមោលតិចៗឱ្យមើលទៅលោតឡើង */
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* បន្ថែមបន្ទាត់ជុំវិញតិចៗ */
+}
+.project-grid {
+    background-color: rgb(250, 247, 247);
+    backdrop-filter: blur(10px);              
+    border-radius: 15px;                      
+    padding: 20px;                            
+    margin-bottom: 20px;                      
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);   
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.exp-item {
+    background-color: rgb(250, 247, 247);
+    backdrop-filter: blur(10px);              
+    border-radius: 15px;                      
+    padding: 20px;                            
+    margin-bottom: 20px;                      
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);   
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* Forms [cite: 40] */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn {
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* Responsive [cite: 58] */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Add JS to toggle for mobile */
+    }
+}

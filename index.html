@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio | Professional Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Portfolio</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header id="home" class="section">
+        <div class="home-content">
+            <img src="profile.jpg" alt="Profile Photo" class="profile-img"> <h1>Hello, I'm <span class="highlight">Sokunthea</span></h1> <p>I am a third years student of information technology at the University of Cambodia.</p> </div>
+    </header>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="container">
+             <div class="education-card">
+            <p>"I am a results-driven student currently focused on mastering the intersection of Web Development and Project Management. With a strong technical foundation in HTML5, CSS3, and JavaScript, I am dedicated to building dynamic, user-friendly digital experiences that solve real-world problems. My career objective is to transition into a professional role where I can apply my academic background and technical skills to create high-impact web solutions while ensuring projects are delivered with precision and efficiency. Beyond my technical pursuits, I am a passionate problem-solver who enjoys staying updated on industry trends and contributing to collaborative environments."</p> </div>
+            </div>
+        </section>
+
+    <section id="education" class="section ">
+        <h2>Education</h2>
+        <div class="container">
+           <div class="education-card">
+    <h3>2015-2021</h3>
+    <p>Studied at Mesang high school.</p>
+</div>
+
+<div class="education-card">
+    <h3>2021-2025</h3>
+    <p>Banking and Finance at Royal University of Law and Economics.</p>
+</div>
+
+<div class="education-card">
+    <h3>2023-2027</h3>
+    <p>Information Technology at University of Cambodia .</p>
+</div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Technical </h2>
+        <div class="container skill-grid">
+            <div class="skill-item">HTML/CSS </div> <div class="skill-item">JavaScript </div> <div class="skill-item">PHP, Database(MySQL)</div>
+    </section>
+
+    <section id="projects" class="section ">
+        <h2>My Projects</h2>
+        <div class="container project-grid">
+            <div class="project-card">
+                <h3>Project Title</h3> <p>Description:Personnel Profile Website .</p> <p><em>Tech: HTML, CSS, JS, PHP , Database</em></p> <a href="#" class="btn">View on GitHub</a> </div>
+        </div>
+    </section>
+    <section id="experience" class="section">
+    <h2>Professional Experience</h2>
+    <div class="container experience-timeline">
+        <div class="exp-item">
+            <div class="exp-date">Oct-2025 - Present</div>
+            <div class="exp-content">
+                <h3>Accountant</h3> <p><strong>Mindbook publising</strong></p>
+                <p>Close list, make revenue and expense report,and Management stock -in,stock-out.  </p>
+            </div>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-date">April-2025 - Oct-2025</div>
+            <div class="exp-content">
+                <h3>Assistant HR</h3> <p><strong>University of Cambodia</strong></p>
+                <p>Prepare salary for teacher,document in office and record ASEAN meeting .</p>
+            </div>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-date">2025</div>
+            <div class="exp-content">
+                <h3>Volunteer at Celebrating Cambodia</h3> <p><strong>Non-Profit Org</strong></p>
+                <p>Nation flag parade and nation anthem singing .</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <div class="container">
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required> <input type="email" id="email" placeholder="Your Email" required> <textarea id="message" placeholder="Your Message" required></textarea> <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fab fa-github"></i></a> </div>
+        </div>
+    </section>
+    <form action="contact.php" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" name="submit">Send Message</button>
+</form>
+
+    <script src="script.js"></script>
+</body>
+</html>
